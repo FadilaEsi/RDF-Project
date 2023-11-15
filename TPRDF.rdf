@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xml:lang="fr"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3c.org/2000/01/rdf-schema#"
+    xmlns:reu="http://example.org/reu/vocabulaire#"
+    xmlns:frmf="http://example.org/frmf#"
+    xmlns:esp="http://example.org/esp#"
+    xmlns:am6f="http://example.org/am6f#"
+    xmlns:cm2030="http://example.org/cm2030#"
+    xmlns:camp="http://example.org/camp#">
+    
+    <rdf:Description rdf:about="http://example.org/reunion/Maroc-Espagne">
+        <rdf:type rdf:resource="http://schema.org/Meeting"/>
+        <frmf:Président rdf:resource="http://example.org/Fouzi_LEKJAA"/>
+        <esp:homologue rdf:resource="http://example.org/Luis_Rubiales"/>
+        <camp:lieu rdf:resource="http://example.org/Académie_Mohamed_6_du_football"/>
+        <camp:date>2023-04-24</camp:date>
+        <camp:sujet>Discussion sur le camp d'entraînement commun et la candidature à la Coupe du monde 2030</camp:sujet>
+    </rdf:Description>
+    
+    <rdf:Description rdf:about="http://example.org/Fouzi_LEKJAA">
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+        <rdfs:label>Fouzi LEKJAA</rdfs:label>
+        <reu:occupe rdf:resource="http://example.org/Poste/Président_FRMF"/>
+        <reu:nationalité>Marocaine</reu:nationalité>
+    </rdf:Description>
+    
+    <rdf:Description rdf:about="http://example.org/Luis_Rubiales">
+        <rdf:type rdf:resource="http://schema.org/Person"/>
+        <rdfs:label>Luis Rubiales</rdfs:label>
+        <esp:occupe rdf:resource="http://example.org/Poste/Président_Fédération_Espagnole_Football"/>
+        <esp:nationalité>Espagnole</esp:nationalité>
+    </rdf:Description>
+    
+    <rdf:Description rdf:about="http://example.org/Académie_Mohamed_6_du_football">
+        <rdf:type rdf:resource="http://schema.org/Organization"/>
+        <rdfs:label>Académie Mohamed 6 du football</rdfs:label>
+        <camp:ville>Maamoura</camp:ville>
+        <camp:pays>Maroc</camp:pays>
+        <camp:adresse>123 Rue du Football</camp:adresse>
+    </rdf:Description>
+    
+</rdf:RDF>
